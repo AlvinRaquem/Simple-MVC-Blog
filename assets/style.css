@@ -1,0 +1,71 @@
+
+	body {
+		padding: 20px;
+		margin: 0px 100px 0px 100px;
+	}
+
+	#topNav {
+			display: flex;
+			width: 100%;
+			background-color: #333;
+			top:0;
+			left: 0;
+			position: fixed;
+			box-shadow: 0px 1px 6px 2px black;
+
+	}
+
+	#topNav a{
+		display: inline-block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 8px;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+
+	#topNav a:nth-child(2){
+		margin-right: auto;
+	}
+
+	#topNav .active {
+		background-color: #ccc;
+		color: black;
+	}
+
+	#mainContent {
+		margin-top: 60px;
+	}
+
+	.deleteBtn {
+		font-size: 20pt;
+		font-weight: bold;
+		color: maroon;
+		float: right;
+	}
+
+	.deleteBtn:focus,
+	.deleteBtn:hover {
+		cursor: pointer;
+	}
+
+	#blogContent {
+		display: grid;
+		grid-template-columns: repeat(4,auto);
+		grid-gap: 10px;
+		padding: 20px;
+		color: white;
+		
+	}
+
+	#blogContent div {
+		background-color: skyblue;
+		color: black;
+		padding: 10px;
+	}
+
+		@media screen and (max-width: 900px) {
+		    #blogContent {
+		        grid-template-columns: repeat(2, auto);
+		    }
+    }
